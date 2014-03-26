@@ -21,18 +21,18 @@
 			</div>
 
 			<div id='content' data-role='content'>
-				<table width="100%" border="0" class="tbl_menu">
-					<tr align="center">
-						<td width="50%"><img src="../icon/clients.png" class="icons"/><br/>Payments</td>
+				<table width="100%" height="90%" border="0" class="tbl_menu">
+					<tr align="center" valign="bottom" height="50%">
+						<td width="50%"><img src="../icon/clients.png" class="icons"/><br/>Client List</td>
 						<td width="50%"><img src="../icon/payments.png" class="icons"/><br/>Payments</td>
 					</tr>
-					<tr align="center">
-						<td width="50%"><img src="../icon/report.png" class="icons"/><br/>Payments</td>
-						<td width="50%"><img src="../icon/search.png" class="icons"/><br/>Payments</td>
+					<tr align="center" valign="bottom">
+						<td width="50%"><img src="../icon/report.png" class="icons"/><br/>Report to HQ</td>
+						<td width="50%"><img src="../icon/search.png" class="icons"/><br/>Client Search</td>
 					</tr>
-					<tr align="center">
-						<td width="50%"><img src="../icon/set.png" class="icons"/><br/>Payments</td>
-						<td width="50%"><img src="../icon/logout.png" class="icons"/><br/>Payments</td>
+					<tr align="center" valign="bottom">
+						<td width="50%"><img src="../icon/set.png" class="icons"/><br/>Settings</td>
+						<td width="50%"><img src="../icon/logout.png" class="icons"/><br/>Log Out</td>
 					</tr>
 				</table>
 			</div><!--end of content-->
