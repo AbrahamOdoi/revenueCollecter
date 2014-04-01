@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="../style.css" />
 		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
-		<script type="text/javascript" src="js/login.js"></script>
+		<script type="text/javascript" src="../js/login.js"></script>
 	</head>
 	<body>
 		<div id='page' data-role='page'>
@@ -23,8 +23,8 @@
 			<div id='content' data-role='content'>
 				<table width="100%" height="90%" border="0" class="tbl_menu">
 					<tr align="center" valign="bottom" height="50%">
-						<td width="50%"><img src="../icon/clients.png" class="icons"/><br/>Client List</td>
-						<td width="50%"><img src="../icon/payments.png" class="icons"/><br/>Payments</td>
+						<td width="50%"><a href="clients.php"><img src="../icon/clients.png" class="icons"/><br/>Client List</a></td>
+						<td width="50%"><a href="transaction.php"><img src="../icon/payments.png" class="icons"/><br/>Payments</a></td>
 					</tr>
 					<tr align="center" valign="bottom">
 						<td width="50%"><img src="../icon/report.png" class="icons"/><br/>Report to HQ</td>
@@ -32,7 +32,7 @@
 					</tr>
 					<tr align="center" valign="bottom">
 						<td width="50%"><img src="../icon/set.png" class="icons"/><br/>Settings</td>
-						<td width="50%"><img src="../icon/logout.png" class="icons"/><br/>Log Out</td>
+						<td width="50%"><a href="../index.php"><img src="../icon/logout.png" class="icons"/><br/>Log Out</a></td>
 					</tr>
 				</table>
 			</div><!--end of content-->

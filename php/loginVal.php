@@ -21,19 +21,19 @@
 				$username = $_POST['txtUsername'];
 				$password = $_POST['txtPassword'];
 
-				$dbcon = mysql_connect("localhost", "heart", "F0undAti0n#1");
-				//$dbcon=mysql_connect("localhost","root","");
-				mysql_select_db("db_heart_foundation");
-
-				$query = "select * from tbl_graphic_user where userID='" . $username . "' and userPass='" . $password . "'";
-				$result = mysql_query($query, $dbcon);
-				$num = mysql_num_rows($result);
-				if ($num < 1) {
-					echo "Unknown credentials" . mysql_error();
-				} else {
-					echo "yes";
-					header('Location:menuPage.php');
-				}
+				// $dbcon = mysql_connect("localhost", "heart", "F0undAti0n#1");
+				// //$dbcon=mysql_connect("localhost","root","");
+				// mysql_select_db("db_heart_foundation");
+				//
+				// $query = "select * from tbl_graphic_user where userID='" . $username . "' and userPass='" . $password . "'";
+				// $result = mysql_query($query, $dbcon);
+				// $num = mysql_num_rows($result);
+				// if ($num < 1) {
+				// echo "Unknown credentials" . mysql_error();
+				// } else {
+				// echo "yes";
+				header('Location:menuPage.php');
+				// }
 				?>
 			</div>
 	</body>
