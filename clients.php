@@ -20,16 +20,7 @@
 				<div id='content' data-role='content'>
 				
 				<div id="set" data-role="collapsible-set" data-content-theme="b">
-					<div id="set1" data-role="collapsible" data-content-theme="b" data-collapsed="true">
-						<h3>NEW CLIENT</h3>
-						<!-- <form id="frmnewClient" method="post" action="newClient.php" data-transition="pop" data-direction="reverse"> -->
-							<div id='frmNewC' data-role="field-contain">
-								<input type="text" name="txtClientname" placeholder="Full Name" id="clientFullName"/>
-								<input type="text" name="txtaccNum" readonly="true" value="<?php echo "NRC".rand (100,999)?>" id="clientid"/>
-								<input type="submit" value="SEND" id='btn_newclient' style="background: green; color: white;"/>
-							</div>
-						<!-- </form> -->
-					</div>
+					
 					<div id="set1">
 						<!-- <h3>ALL CLIENTS</h3> -->
 						<p>

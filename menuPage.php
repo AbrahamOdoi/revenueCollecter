@@ -25,17 +25,20 @@
 			</div>
 
 			<div id='content' data-role='content'>
-				<table width="100%" height="90%" border="0" class="tbl_menu">
+				<table width="100%" height="90%" border="0" class="tbl_menu" class="menutable">
 					<tr align="center" valign="bottom" height="50%">
 						<td width="30%"><a href="clients.php"><img src="icon/people.png" class="icons"/><br/>Clients List</a></td>
+						<td width="30%"></td>
 						<td width="30%"><a href="transaction.php"><img src="icon/file.png" class="icons"/><br/>Payments</a></td>
 					</tr>
 					<tr align="center" valign="bottom">
-						<td width="30%"><img src="icon/pad.png" class="icons"/><br/>Add Client</td>
-						<td width="30%"><img src="icon/search.png" class="icons"/><br/>Search Client</td>
+						<td width="30%"><a href="addclients.php"><img src="icon/pad.png" class="icons"/><br/>Add Client</a></td>
+						<td width="30%"></td>
+						<td width="30%"><img src="icon/search.png" class="icons"/><br/>Search</td>
 					</tr>
 					<tr align="center" valign="bottom">
 						<td width="30%"><img src="icon/settings.png" class="icons"/><br/>Settings</td>
+						<td width="30%"></td>
 						<td width="30%"><a href="index.php"><img src="icon/off.png" class="icons"/><br/>Log Out</a></td>
 					</tr>
 				</table>
