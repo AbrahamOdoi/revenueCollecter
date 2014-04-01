@@ -1,6 +1,9 @@
 .icons{
-	width: 30%;
+	width: 60%;
 }
 .tbl_menu{
 	margin-top:50px;
+}
+a{
+	text-decoration: none;
 }
