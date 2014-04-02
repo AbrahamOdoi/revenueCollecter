@@ -61,6 +61,9 @@ $(document).ready(function() {
 		}
 	});
 
+	$("#btnenter").click(function() {
+		$(".loading").show();
+	});
 	function showError(message) {
 		$('<div class="ui-loader ui-overlay-shadow ui_body_error ui-corner-all"><h1>' + message + '</h1></div>').css({
 			"display" : "block",
