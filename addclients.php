@@ -14,7 +14,7 @@
 	<body>
 		<div id='page' data-role='page'>
 			<div id='header' data-role='header' style="background: #0171ba; text-align: center; padding: 5px;padding-left: 30px;">
-				<a href="menuPage.php" data-icon="gear" class="ui-btn-left">BACK</a>
+				<a href="menuPage.php" data-icon="gear" class="ui-btn-left" rel="external">BACK</a>
 				<h1>Clients</h1>
 			</div>
 
@@ -31,6 +31,7 @@
 							<label for="txtaccNum">Account Number</label>
 							<input type="text" name="txtaccNum" readonly="true" value="<?php echo "NRC".rand (100,999)?>" id="clientid"/>
 							<input type="submit" value="SEND" id='btn_newclient' style="background: green; color: white;"/>
+							<div class="error" id="acerror"></div>
 							<div class="loading">
 								<div class="circle"></div>
 								<div class="circle1"></div>

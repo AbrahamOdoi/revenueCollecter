@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-
 	$('.circle, .circle1').removeClass('stop');
 	$('.triggerFull').click(function() {
 		$('.circle, .circle1').toggleClass('stop');
@@ -21,24 +20,32 @@ $(document).ready(function() {
 	};
 
 	$("#btn_newclient").click(function() {
-		$('#info').html('Please wait whiles details are being saved');
-		$(".loading").show();
 		var clientname = $('#clientFullName').val();
 		var clientnum = $('#MobileNumber').val();
 		var clientid = $('#clientid').val();
-
-		$.post('newClient.php', {
-			name : clientname,
-			number : clientnum,
-			id : clientid
-		}, function(data) {
-			// $("#btn_newclient").prop('disabled', 'enable');
-			$(".loading").hide();
-			$('#info').html(data).;
-
-		})
-		return false;
-
+		if (clientname == '') {
+			$("#acerror").html('field required');
+			$('#clientFullName').css('background', 'orange');
+			return false
+		}
+		if (clientnum == '') {
+			$("#acerror").html('field required');
+			$('#MobileNumber').css('background', 'orange');
+			return false
+		} else {
+			$('#info').html('Please wait whiles details are being saved');
+			$(".loading").show();
+			$.post('newClient.php', {
+				name : clientname,
+				number : clientnum,
+				id : clientid
+			}, function(data) {
+				// $("#btn_newclient").prop('disabled', 'enable');
+				$(".loading").hide();
+				$('#info').html(data);
+			})
+			return false
+		}
 	});
 
 	$("#btnnewtrans").click(function() {
@@ -63,8 +70,6 @@ $(document).ready(function() {
 			}, function(data) {
 				$(".loading").hide();
 				$('#info').html(data);
-				$('#accnum').val() = '';
-				$('#amount').val() = '';
 			})
 			return false;
 		}

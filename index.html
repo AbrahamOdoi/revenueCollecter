@@ -8,44 +8,25 @@
 		<!-- <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script> -->
 		<!-- <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script> -->
 
-		<link rel="stylesheet" href="jquery.mobile-1.2.0.min.css" />
-		<script src="jquery-1.8.2.min.js"></script>
-		<script src="jquery.mobile-1.2.0.min.js"></script>
-		<script type="text/javascript" src="js/login.js"></script>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
 		<link rel="stylesheet" href="style.css" />
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" src="js/login.js"></script>
+		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+
 	</head>
 	<body>
-		<div id='page' data-role='page'>
-			<div id='header' data-role='header' style="background: #0171ba; text-align: left; padding: 5px;padding-left: 30px;">
-				<span><img src="img/login.png"/> LOGIN</span>
-			</div>
-
-			<div id='content' data-role='content'>
-				<form id="myForm" method="post" action="http://216.224.161.207/revenueCollecter/loginVal.php" data-transition="pop" data-direction="reverse">
-				<!-- <form id="myForm" method="post" action="php/loginVal.php" data-transition="pop" data-direction="reverse"> -->
-
-				<fieldset>
-					<div id='frmlogin' data-role="field-contain">
-
-						<label for='txtUsername' id="usernameDiv" data-role="field-contain">UserID</label>
-						<input type="text" name="txtUsername" placeholder="username" id="txtUsername"/>
-
-						<label for="txtPassword" id="passwordDiv" data-role="field-contain">Password</label>
-						<input type="password" name="txtPassword" placeholder="password" id="txtPassword"/>
-
-						<input type="submit" value="LOGIN" data-corners="false" data-theme="d" id="btnenter"/>
-						<div class="loading">
-							<div class="circle"></div>
-							<div class="circle1"></div>
-						</div>
-					</div>
-				</fieldset>
-				</form>
-
-			</div>
+		<div data-role="page" id="page" class="page" style="background: white;">
+			<img src="img/zoomlion logo.jpg" id='logoo' class='' style="margin-top:30%; display:none; width: 100%;"/>
+			<img src="img/nalo.png" width="30%" style="position: absolute; bottom: 0px;">
 
 		</div>
-
+		<script>
+			$('#logoo').fadeIn(6000, function() {
+				window.location = 'login.php';
+				// window.location = 'http://216.224.161.207/loadshedding/mainpage.php';
+			});
+		</script>
 	</body>
 </html>
 

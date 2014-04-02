@@ -13,7 +13,7 @@
 	<body>
 		<div id='page' data-role='page'>
 			<div id='header' data-role='header' style="background: #0171ba; text-align: center; padding: 5px;padding-left: 30px;">
-				<a href="menuPage.php" data-icon="gear" class="ui-btn-left">BACK</a>
+				<a href="menuPage.php" data-icon="gear" class="ui-btn-left"  rel="external">BACK</a>
 				<h1>Clients</h1>
 			</div>
 

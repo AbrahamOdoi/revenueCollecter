@@ -19,10 +19,11 @@ if ($num > 0) {
 		echo "Payment Successful";
 		while ($row = mysql_fetch_assoc($result)) {
 			$clientNum = $row['mobile'];
+			$clientName = $row['clientName'];
 		}
 
 		$senderID = 'Revenue Col';
-		$message = "Hello, " . $clientName . " your account was created successfully and your acnt number is " . $accNumber;
+		$message = "Hello, " . $clientName . " your account has just been credited with GHc" . $Amount;
 		$url = "http://121.241.242.114:8080/bulksms/bulksms?username=na1-debbie&password=nalosol&type=0&dlr=1";
 		$myvars = 'destination=' . $clientNum . '&source=' . $senderID . '&message=' . $message;
 
