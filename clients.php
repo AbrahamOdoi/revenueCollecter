@@ -37,7 +37,7 @@
 							if (mysql_num_rows($result) > 0) {echo "<ul data-role='listview' data-inset='true' data-filter='true' id='wrpPending' style='color:blue;'>";
 
 								while ($row = mysql_fetch_array($result)) {
-									echo "<li id='pendingDetails'><font color='gray' size='3px'>Name</font>:  " . $row['clientName'] . "<br/><font color='gray' size='3px'>Acc Num:</font>  " . $row['accNumber'] . " </li>";
+									echo "<li id='pendingDetails'><font color='gray' size='3px'>Name</font>:  " . $row['clientName'] . "<br/><font color='gray' size='3px'>Acc Num:</font>  " . $row['accNumber'] . "<br/><font color='gray' size='3px'>Mobile Num:</font> " . $row['mobile'] . "  </li>";
 								}
 								echo "</ul>";
 							} else {

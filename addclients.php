@@ -23,17 +23,29 @@
 				<div id="set1" data-role="collapsible" data-content-theme="b" data-collapsed="false">
 					<h3>NEW CLIENT DETAILS</h3>
 					<div id='frmNewC' data-role="field-contain">
-						<label for="txtClientname">Full Name</label>
-						<input type="text" name="txtClientname" placeholder="Full Name" id="clientFullName"/>
-						<label for="txtClientnum">Mobile Number</label>
-						<input type="text" name="txtClientnum" placeholder="Mobile No." id="MobileNumber"/>
-						<label for="txtaccNum">Account Number</label>
-						<input type="text" name="txtaccNum" readonly="true" value="<?php echo "NRC".rand (100,999)?>" id="clientid"/>
-						<input type="submit" value="SEND" id='btn_newclient' style="background: green; color: white;"/>
-						<div id="info"></div>
+						<form>
+							<label for="txtClientname">Full Name</label>
+							<input type="text" name="txtClientname" placeholder="Full Name" id="clientFullName" required="required"/>
+							<label for="txtClientnum">Mobile Number</label>
+							<input type="text" name="txtClientnum" placeholder="+233" id="MobileNumber" required="required"/>
+							<label for="txtaccNum">Account Number</label>
+							<input type="text" name="txtaccNum" readonly="true" value="<?php echo "NRC".rand (100,999)?>" id="clientid"/>
+							<input type="submit" value="SEND" id='btn_newclient' style="background: green; color: white;"/>
+							<div class="loading">
+								<div class="circle"></div>
+								<div class="circle1"></div>
+							</div>
+							<div id="info"></div>
+						</form>
 					</div>
-				</div>
 
-			</div><!--end of content-->
+				</div>
+			</div>
+			<!-- <div class="container">
+			<div class="content"> -->
+
+			<!-- </div>
+			</div> -->
+		</div><!--end of content-->
 	</body>
 </html>

@@ -2,15 +2,14 @@
 date_default_timezone_set('UTC');
 $now = date('Y-m-d G:i:s');
 
-$client = $_POST['accname'];
-$Number = $_POST['accnum'];
-$Amount = $_POST['amount'];
+ $Number = $_POST['accnum'];
+ $Amount = $_POST['amount'];
 
 $dbcon = mysql_connect("localhost", "heart", "F0undAti0n#1");
 //$dbcon = mysql_connect("localhost", "root", "");
 mysql_select_db("db_heart_foundation");
 
-$sql = "SELECT * FROM tbl_clients where clientName='" . $client . "' AND accNumber='" . $Number . "'";
+$sql = "SELECT * FROM tbl_clients where accNumber='" . $Number . "'";
 $result = mysql_query($sql, $dbcon);
 $num = mysql_num_rows($result);
 if ($num > 0) {
